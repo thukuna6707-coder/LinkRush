@@ -5,12 +5,19 @@ const net = require("node:net");
 const fs = require("node:fs");
 const path = require("node:path");
 const { URL } = require("node:url");
+const PROVIDERS = require("./providers.json");
 
 const PORT = process.env.PORT || 3000;
 const PUBLIC_DIR = path.join(__dirname, "public");
 const MAX_REDIRECTS = 10;
 const TIMEOUT_MS = 12000;
 const MAX_BODY = 1024 * 64;
+
+function detectProvider(input) {
+  let hostname;
+  try { hostname = new URL(input).hostname.toLowerCase(); } catch { return null; }
+  return PROVIDERS.find(provider => (provider.domains || []).some(domain => hostname === domain || hostname.endsWith("." + domain))) || null;
+}
 
 function isPrivateIPv4(ip) {
   const p = ip.split(".").map(Number);
@@ -120,14 +127,20 @@ async function inspect(start) {
     }
     const html = response.body;
     const captcha = /captcha|recaptcha|hcaptcha|cloudflare.*challenge|verify you are human|checking your browser/i.test(html);
-    const interstitial = captcha || /click here to continue|continue to destination|please wait|adblock/i.test(html);
+    const gatedAction = /complete.{0,40}survey|survey.{0,40}(unlock|continue)|subscribe.{0,30}(unlock|continue)|unlock.{0,30}survey|sign in to continue|log in to continue/i.test(html);
+    const interstitial = captcha || gatedAction || /click here to continue|continue to destination|please wait|adblock/i.test(html);
+    const provider = detectProvider(start);
     return {
       finalUrl: current.href,
+      resolved: !interstitial,
       chain,
       status: response.status,
+      provider: provider ? { name: provider.name, category: provider.category, status: provider.status } : null,
       needsHuman: interstitial,
-      reason: captcha ? "The site appears to require human verification. Complete it on the original service; LinkRush cannot solve or transfer CAPTCHA tokens." :
-        interstitial ? "The site appears to show an interstitial page or requires an additional user action." : null
+      verificationUrl: interstitial ? start : null,
+      reason: captcha ? "Human CAPTCHA verification is required. Continue on the original provider page; LinkRush cannot solve, copy, transfer, or replay CAPTCHA tokens." :
+        gatedAction ? "The provider appears to require a survey, subscription, or sign-in. LinkRush cannot skip that requirement; complete it with the provider if you choose." :
+        interstitial ? "The provider shows an interstitial or requires another action. Continue on the original provider page." : null
     };
   }
   throw new Error("Too many redirects.");
@@ -144,6 +157,9 @@ function send(res, status, data) {
 }
 const server = http.createServer(async (req, res) => {
   if (req.url === "/health") return send(res, 200, { ok: true });
+  if (req.method === "GET" && new URL(req.url, "http://localhost").pathname === "/api/providers") {
+    return send(res, 200, { providers: PROVIDERS.map(({ name, category, status, note }) => ({ name, category, status, note: note || null })) });
+  }
   if (req.method === "POST" && req.url === "/api/resolve") {
     let raw = "";
     req.on("data", chunk => {

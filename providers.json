@@ -1,0 +1,520 @@
+[
+  {
+    "name": "Linkvertise",
+    "category": "Ad / unlock",
+    "domains": [
+      "linkvertise.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "LootLabs",
+    "category": "Ad / unlock",
+    "domains": [
+      "lootlabs.gg",
+      "lootlabs.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Loot-Link",
+    "category": "Ad / unlock",
+    "domains": [
+      "loot-link.com",
+      "loot-link.net"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Lootdest",
+    "category": "Ad / unlock",
+    "domains": [
+      "lootdest.org",
+      "lootdest.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Work.ink",
+    "category": "Ad / unlock",
+    "domains": [
+      "work.ink"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Boost.ink",
+    "category": "Ad / unlock",
+    "domains": [
+      "boost.ink"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Sub2Unlock",
+    "category": "Ad / unlock",
+    "domains": [
+      "sub2unlock.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Sub2Get",
+    "category": "Ad / unlock",
+    "domains": [
+      "sub2get.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Rekonise",
+    "category": "Ad / unlock",
+    "domains": [
+      "rekonise.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Bstlar",
+    "category": "Ad / unlock",
+    "domains": [
+      "bstlar.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "AdMaven",
+    "category": "Ad / unlock",
+    "domains": [
+      "admaven.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "OGAds",
+    "category": "Ad / unlock",
+    "domains": [
+      "ogads.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "CPABuild",
+    "category": "Ad / unlock",
+    "domains": [
+      "cpabuild.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "AdBlueMedia",
+    "category": "Ad / unlock",
+    "domains": [
+      "adbluemedia.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Locker.gg",
+    "category": "Ad / unlock",
+    "domains": [
+      "locker.gg"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Link-Hub",
+    "category": "Ad / unlock",
+    "domains": [
+      "link-hub.net",
+      "linkhub.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Link-Center",
+    "category": "Ad / unlock",
+    "domains": [
+      "link-center.net"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Pastr.so",
+    "category": "Ad / unlock",
+    "domains": [
+      "pastr.so"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "ControlC",
+    "category": "Ad / unlock",
+    "domains": [
+      "controlc.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "JustPaste",
+    "category": "Ad / unlock",
+    "domains": [
+      "justpaste.it"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Ouo.io",
+    "category": "Ad shortener",
+    "domains": [
+      "ouo.io",
+      "ouo.press"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "ShrinkMe.io",
+    "category": "Ad shortener",
+    "domains": [
+      "shrinkme.io",
+      "shrinkme.click"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "ShrinkEarn",
+    "category": "Ad shortener",
+    "domains": [
+      "shrinkearn.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Exe.io",
+    "category": "Ad shortener",
+    "domains": [
+      "exe.io"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Fc.lc",
+    "category": "Ad shortener",
+    "domains": [
+      "fc.lc"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "AdFoc.us",
+    "category": "Ad shortener",
+    "domains": [
+      "adfoc.us"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Shorte.st",
+    "category": "Ad shortener",
+    "domains": [
+      "shorte.st"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "AdFly",
+    "category": "Ad shortener",
+    "domains": [
+      "adf.ly",
+      "adfly.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Clicksfly",
+    "category": "Ad shortener",
+    "domains": [
+      "clicksfly.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "CutWin",
+    "category": "Ad shortener",
+    "domains": [
+      "cutwin.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "CutPaidAd",
+    "category": "Ad shortener",
+    "domains": [
+      "cutpaidad.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "LinkShrink",
+    "category": "Ad shortener",
+    "domains": [
+      "linkshrink.net",
+      "linkshrink.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "GPLinks",
+    "category": "Ad shortener",
+    "domains": [
+      "gplinks.co",
+      "gplinks.in",
+      "gplinks.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Droplink",
+    "category": "Ad shortener",
+    "domains": [
+      "droplink.co",
+      "droplink.co.in"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Terabox",
+    "category": "File hosting",
+    "domains": [
+      "terabox.com",
+      "1024tera.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Up-4ever",
+    "category": "File hosting",
+    "domains": [
+      "up-4ever.net"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "KatFile",
+    "category": "File hosting",
+    "domains": [
+      "katfile.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Rapidgator",
+    "category": "File hosting",
+    "domains": [
+      "rapidgator.net"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Zagl",
+    "category": "File hosting",
+    "domains": [
+      "zagl.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Clk.sh",
+    "category": "Ad shortener",
+    "domains": [
+      "clk.sh"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "AdShrink.it",
+    "category": "Ad shortener",
+    "domains": [
+      "adshrink.it"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Uii.io",
+    "category": "Ad shortener",
+    "domains": [
+      "uii.io"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Shortzon",
+    "category": "Ad shortener",
+    "domains": [
+      "shortzon.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "PaySkip",
+    "category": "Ad shortener",
+    "domains": [
+      "payskip.org"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "V2Links",
+    "category": "Ad shortener",
+    "domains": [
+      "v2links.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Earn4Files",
+    "category": "File hosting",
+    "domains": [
+      "earn4files.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "EarnLinks",
+    "category": "File hosting",
+    "domains": [
+      "earnlinks.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Dlupload",
+    "category": "File hosting",
+    "domains": [
+      "dlupload.com"
+    ],
+    "status": "Detection only"
+  },
+  {
+    "name": "Bitly",
+    "category": "URL shortener",
+    "domains": [
+      "bit.ly",
+      "bitly.com"
+    ],
+    "status": "Partially supported"
+  },
+  {
+    "name": "TinyURL",
+    "category": "URL shortener",
+    "domains": [
+      "tinyurl.com"
+    ],
+    "status": "Partially supported"
+  },
+  {
+    "name": "Rebrandly",
+    "category": "URL shortener",
+    "domains": [
+      "rebrand.ly",
+      "rebrandly.com"
+    ],
+    "status": "Partially supported"
+  },
+  {
+    "name": "Short.io",
+    "category": "URL shortener",
+    "domains": [
+      "short.io"
+    ],
+    "status": "Partially supported"
+  },
+  {
+    "name": "BL.INK",
+    "category": "URL shortener",
+    "domains": [
+      "bl.ink"
+    ],
+    "status": "Partially supported"
+  },
+  {
+    "name": "Cutt.ly",
+    "category": "URL shortener",
+    "domains": [
+      "cutt.ly"
+    ],
+    "status": "Partially supported"
+  },
+  {
+    "name": "T2M",
+    "category": "URL shortener",
+    "domains": [
+      "t2m.io"
+    ],
+    "status": "Partially supported"
+  },
+  {
+    "name": "Dub.co",
+    "category": "URL shortener",
+    "domains": [
+      "dub.co"
+    ],
+    "status": "Partially supported"
+  },
+  {
+    "name": "YOURLS",
+    "category": "URL shortener",
+    "domains": [],
+    "status": "Partially supported",
+    "note": "Self-hosted instances use custom domains."
+  },
+  {
+    "name": "Polr",
+    "category": "URL shortener",
+    "domains": [],
+    "status": "Partially supported",
+    "note": "Self-hosted instances use custom domains."
+  },
+  {
+    "name": "Linkly",
+    "category": "URL shortener",
+    "domains": [
+      "linkly.link",
+      "linklyhq.com"
+    ],
+    "status": "Partially supported"
+  },
+  {
+    "name": "Sniply",
+    "category": "URL shortener",
+    "domains": [
+      "snip.ly",
+      "sniply.io"
+    ],
+    "status": "Partially supported"
+  },
+  {
+    "name": "Switchy",
+    "category": "URL shortener",
+    "domains": [
+      "switchy.io"
+    ],
+    "status": "Partially supported"
+  },
+  {
+    "name": "is.gd",
+    "category": "URL shortener",
+    "domains": [
+      "is.gd"
+    ],
+    "status": "Partially supported"
+  },
+  {
+    "name": "v.gd",
+    "category": "URL shortener",
+    "domains": [
+      "v.gd"
+    ],
+    "status": "Partially supported"
+  }
+]
