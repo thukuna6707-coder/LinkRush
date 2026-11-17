@@ -166,9 +166,13 @@ const server = http.createServer(async (req, res) => {
     return;
   }
   if (req.method === "GET") {
-    const requested = req.url === "/" ? "index.html" : decodeURIComponent(req.url.split("?")[0]).replace(/^\/+/, "");
+    let pathname;
+    try { pathname = decodeURIComponent(new URL(req.url, "http://localhost").pathname); }
+    catch { return send(res, 400, { error: "Invalid request path" }); }
+    const requested = pathname === "/" ? "index.html" : pathname.replace(/^\/+/, "");
     const file = path.resolve(PUBLIC_DIR, requested);
-    if (!file.startsWith(PUBLIC_DIR + path.sep)) return send(res, 403, { error: "Forbidden" });
+    const relative = path.relative(PUBLIC_DIR, file);
+    if (relative.startsWith("..") || path.isAbsolute(relative)) return send(res, 403, { error: "Forbidden" });
     fs.readFile(file, (err, data) => {
       if (err) return send(res, 404, { error: "Not found" });
       const type = file.endsWith(".html") ? "text/html; charset=utf-8" : "application/octet-stream";
